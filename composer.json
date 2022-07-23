@@ -4,6 +4,9 @@
   "keywords": ["zip", "stream"],
   "type": "library",
   "license": "MIT",
+  "extra": {
+    "branch-alias": {"dev-master": "2.2.x-dev"}
+  },
   "authors": [{
       "name": "Paul Duncan",
       "email": "pabs@pablotron.org"
