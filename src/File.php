@@ -221,7 +221,9 @@ class File
         // (fixes bug in windows archive viewer)
         $filename = preg_replace('/^\\/+/', '', $filename);
 
-        return str_replace(['\\', ':', '*', '?', '"', '<', '>', '|'], '_', $filename);
+        $filename = str_replace(['\\', ':', '*', '?', '"', '<', '>', '|'], '_', $filename);
+
+        return mb_convert_encoding($filename, 'SJIS-win', 'UTF-8');
     }
 
     /**
